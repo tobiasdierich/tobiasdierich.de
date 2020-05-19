@@ -30,6 +30,8 @@
     			background-size: cover;
 
     			opacity: .2;
+
+                pointer-events: none;
     		}
 
     		.message {
@@ -41,12 +43,26 @@
     			height: 100vh;
 
 				text-align: center;
+
+                z-index: 10;
     		}
 
     		.message h1 {
 				font-size: 5rem;
 				font-weight: 100;
     		}
+
+            .message p {
+                font-size: 1.5rem;
+            }
+
+            .message a {
+                color: #fff;
+            }
+
+            .message a:hover {
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
@@ -57,7 +73,12 @@
         <div class="meme"></div>
 
         <div class="message">
-    		<h1>Tobias Dierich</h1>
+            <div style="padding: 0 1rem;">
+    	       	<h1>Tobias Dierich</h1>
+                <p>
+                    🎉&nbsp;&nbsp;I've recently launched my first SaaS Product <a href="https://likvi.de" target="_blank">likvi</a>. Feel free to check it out.
+                </p>
+            </div>
         </div>
     </body>
 </html>
